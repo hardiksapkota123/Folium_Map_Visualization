@@ -37,7 +37,7 @@ districts = [
 # Add markers for each district
 for district in districts:
     name, lat, lon = district
-    custom_icon = CustomIcon(icon_image=r"C:\Users\hardi\OneDrive\Desktop\Map_Distribution_Monkey_Catastrophe\Custom_Marker.png", icon_size=(40,40))
+    custom_icon = CustomIcon(icon_image=r"PATH to CUSTOM PNG IMAGE", icon_size=(40,40))
     popup_content = f"<b>{name}</b>"
     folium.Marker([lat, lon], popup=popup_content, icon=custom_icon).add_to(mapObj)
 
